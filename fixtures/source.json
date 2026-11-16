@@ -1,0 +1,46 @@
+{
+  "stages": {
+    "opening": {
+      "routes": {
+        "/events/E1/requests": {
+          "contentType": "application/json",
+          "body": {
+            "items": [
+              {
+                "reference": "local-1",
+                "eventId": "E1",
+                "name": "Local Resident",
+                "slot": "A",
+                "requestedAt": "2026-11-16T08:00:00Z",
+                "desiredStatus": "join"
+              }
+            ],
+            "next": null
+          },
+          "etag": "\"opening\""
+        }
+      }
+    },
+    "updated": {
+      "routes": {
+        "/events/E1/requests": {
+          "contentType": "application/json",
+          "body": {
+            "items": [
+              {
+                "reference": "local-1",
+                "eventId": "E1",
+                "name": "Local Resident",
+                "slot": "A",
+                "requestedAt": "2026-11-16T09:00:00Z",
+                "desiredStatus": "cancel"
+              }
+            ],
+            "next": null
+          },
+          "etag": "\"updated\""
+        }
+      }
+    }
+  }
+}
